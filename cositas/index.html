@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- https://artisansweb.net/how-to-connect-firebase-realtime-database-to-your-website-form/-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase</title>
+</head>
+<body>
+    <form method="post" id="formulario">
+        <p>
+            Nombre: <input type="text" name="fullname" id="nombre" required />
+        </p>
+        <p>
+            Email: <input type="email" name="email" id="email" required />
+        </p>
+        <p>
+            Asunto: <input type="text" name="subject" id="asunto" />
+        </p>
+        <p>
+            Mensaje: <textarea name="message" id="mensaje"></textarea>
+        </p>
+        <button type="submit" name="submit">Enviar</button>
+    </form>
+       
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    
+    <script> 
+                
+        const firebaseConfig = {  
+            apiKey: "AIzaSyDmVbFkqvPzm-NeiMOx8wbuon3J7ftoGQ0",  
+            authDomain: "miagenda-e55b8.firebaseapp.com",  
+            projectId: "miagenda-e55b8",  
+            storageBucket: "miagenda-e55b8.appspot.com",  
+            messagingSenderId: "1082454455814",  
+            appId: "1:1082454455814:web:4b085dbc9e24def47ef587"  
+        };  
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        // Initialize Cloud Firestore and get a reference to the service
+        const db = firebase.firestore();
+              
+    </script>
+
+    <script src="js/db.js"></script>
+
+        
+</body>
+</html>

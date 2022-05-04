@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pagina de Inicio - Hospital General de Mendoza</title>
+        <meta name="description" content="Index Oficial Hospital">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">   
+    </head>
+    <body>
+        <!-- HEADER DE LA PÁGINA -->
+        <div class="header">
+            <a href="index.html" class="logo"><img src="img/images.png" alt="Logo" width="300" height="90"></a>
+            <div class="header-right" style="transform: translate(-15px, 20px);">
+                    <a href="html/login.html"><img src="img/iniciar-sesion.png" alt="icono iniciar sesion" width="50" height="auto"></a>
+            </div>
+        </div>
+        <!-- IMAGEN DE BODY -->
+        <div class="hero-image">
+            <div class="hero-text">
+              <h1>Hospital General de Mendoza</h1>
+            </div>
+        </div>
+        <!-- IMFORMATIVO DE BODY -->
+        <div class="informativo-div">
+            <p>Necesitas registrarte o loguearte para poder usar las funciones de esta página.</p>
+        </div>
+        <!-- FOOTER DE LA PÁGINA -->
+        <div class="footer-basic">
+            <footer>
+                <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Home</a></li>
+                    <li class="list-inline-item"><a href="#">Services</a></li>
+                    <li class="list-inline-item"><a href="#">About</a></li>
+                    <li class="list-inline-item"><a href="#">Terms</a></li>
+                    <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                </ul>
+                <p class="copyright">Hospital General de Mendoza © 2022</p>
+            </footer>
+        </div>
+         <!-- JAVASCRIPT -->
+         <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>  
+   
+         <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+          
+         <script>
+       
+            const firebaseConfig = {
+            apiKey: "AIzaSyAKZ-4MLklFjBPpAkErDghREVPWevxV5IQ",
+            authDomain: "apphospital-cfefe.firebaseapp.com",
+            projectId: "apphospital-cfefe",
+            storageBucket: "apphospital-cfefe.appspot.com",
+            messagingSenderId: "131496650622",
+            appId: "1:131496650622:web:ed1accd8e39216c295352f"
+            };
+         
+           // Initialize Firebase
+         
+           firebase.initializeApp(firebaseConfig);
+           const db = firebase.firestore();
+         </script>
+    </body>
+</html>
